@@ -6,9 +6,13 @@ Summary:	Automatically switch the horizontal/vertical window split orientation i
 URL:		https://pypi.org/project/autotiling/
 License:	GPL-3.0-or-later
 Group:		Development/Python
-BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	pkgconfig
+BuildRequires:  pkgconfig(python)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 Automatically switch the horizontal/vertical window split orientation in sway and i3
