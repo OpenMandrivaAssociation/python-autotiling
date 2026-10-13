@@ -1,6 +1,6 @@
 Name:		python-autotiling
 Version:	1.9.3
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/a/autotiling/autotiling-%{version}.tar.gz
 Summary:	Automatically switch the horizontal/vertical window split orientation in sway and i3
 URL:		https://pypi.org/project/autotiling/
@@ -9,13 +9,14 @@ Group:		Development/Python
 BuildSystem:	python
 BuildArch:	noarch
 BuildRequires:	pkgconfig
-BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 
 %description
-Automatically switch the horizontal/vertical window split orientation in sway and i3
+Automatically switch the horizontal or vertical window split
+orientation in sway and i3.
 
 %files
 %{_bindir}/autotiling
